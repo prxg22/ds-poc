@@ -1,10 +1,12 @@
+import tokens from './assets/tokens';
+
 export default {
   "colors": {
     "black": "#000e1a",
     "white": "#fff",
-    "blue": "#007ce0",
+    "blue": "blue",
     "navy": "#004175",
-    "blue_sky": "#9870FF"
+    "blue_sky": `#${tokens.brand01}`,
   },
   "space": [
     0, 4, 8, 16, 32, 64, 128, 256, 512
@@ -12,7 +14,7 @@ export default {
   "buttons": {
     "primary": {
       "color": "white",
-      "backgroundColor": "blue",
+      "backgroundColor": `#${tokens.brand01}`,
       "&:hover": {
         "backgroundColor": "black"
       }
