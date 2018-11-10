@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
   color,
-  width,
-  space,
-  display,
   style,
 } from 'styled-system'
 
@@ -15,20 +15,33 @@ const fontSize = style({
   scale: [0, 4, 8, 16, 32],
 });
 
-const Box = styled.p`
-  ${space}
-  ${width}
+const Element = styled.p`
   ${color}
-  ${display}
-  ${fontSize},
+  ${fontSize}
 `;
 
-Box.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  ...color.propTypes
-};
+/** @component */
+export default class Text extends React.Component {
+  static propTypes = {
+    color: PropTypes.string,
+    fontSize: PropTypes.number,
+    text: PropTypes.string,
+  };
 
-Box.displayName = 'Box';
+  render() {
+    const {
+      text,
+      color,
+      fontSize
+    } = this.props;
 
-export default Box
+    return (
+      <Element
+        color={color}
+        fontSize={fontSize}
+      >
+        { text }
+      </Element>
+    )
+  }
+}

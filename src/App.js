@@ -18,7 +18,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Box bg="blue_sky" m={4} display='flex'>
+        <Box background="#eeeeee" m={4} display='flex'>
           <Box width={1}>1</Box>
           <Box width={1}>2</Box>
           <Box width={1}>3</Box>
@@ -26,9 +26,7 @@ class App extends Component {
         </Box>
 
         <Box m={4} display='flex'>
-          <Button variant='primary' width={1/2}>
-            texto
-          </Button>
+          <Button variant='primary' width={1/2} text="texto" />
 
           <Button variant='secondary' width={1/2}>
             texto
@@ -39,19 +37,19 @@ class App extends Component {
           </Button>
         </Box>
 
-        <Text fontSize={4}>Lorem ipsum</Text>
+        <Text fontSize={4} text="Lorem ipsum" />
 
         <Box m={4}>
-          <Box my={2} bg='blue_sky' width={[1]}>
+          <Box my={2} background='#eeeeee' width={[1]}>
             1
           </Box>
 
           <Box display="flex">
-            <Box bg='black' width={[1, 1/2]}>
+            <Box background='#eeeeee' width={[1, 1/2]}>
               1
             </Box>
 
-            <Box bg="navy" width={[1, 1/2]}>
+            <Box background='#eeeeee' width={[1, 1/2]}>
               1
             </Box>
           </Box>

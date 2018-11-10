@@ -1,5 +1,6 @@
+flex-direction: column
 ```js
-<Flex m={4} flexDirection='column'>
+<Flex flexDirection='column'>
   <Box>1</Box>
   <Box>2</Box>
   <Box>3</Box>
@@ -7,8 +8,9 @@
 </Flex>
 ```
 
+flex-direction: Row
 ```js
-<Flex m={4} flexDirection='row'>
+<Flex flexDirection='row'>
   <Box>1</Box>
   <Box>2</Box>
   <Box>3</Box>
