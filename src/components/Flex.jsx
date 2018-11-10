@@ -9,7 +9,7 @@ import {
   flexDirection,
   propTypes
 } from 'styled-system'
-import theme from './theme'
+import theme from './../theme'
 
 const Flex = styled.div`
   display: flex;

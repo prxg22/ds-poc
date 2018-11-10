@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import Box from './Box';
-import Button from './Button';
-import Text from './Text';
-import Flex from './Flex';
+import Box from './components/Box';
+import Button from './components/Button';
+import Text from './components/Text';
+import Flex from './components/Flex';
 
 class App extends Component {
   render() {
