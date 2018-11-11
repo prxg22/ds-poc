@@ -61,9 +61,16 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "styleguidist:server": "npx styleguidist server",
-    "styleguidist:build": "npx styleguidist build"
+    "styleguidist:build": "npx styleguidist build",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^4.0.4",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-info": "^4.0.4",
+    "@storybook/addon-knobs": "^4.0.4",
+    "@storybook/addon-viewport": "^4.0.4",
+    "@storybook/react": "^4.0.4",
     "react-docgen": "^2.21.0",
     "react-styleguidist": "^8.0.3"
   },

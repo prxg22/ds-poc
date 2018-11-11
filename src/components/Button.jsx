@@ -30,9 +30,9 @@ class Button extends React.Component {
     width: PropTypes.number,
     /** Button color, this match a color that exists in theme.colors['<color>'] */
     color: PropTypes.string,
-    /** Display property, can be: ***inline-block*** | ***block*** | ***flex*** */
+    /** Display property, can be: inline-block | block | flex */
     display: PropTypes.string,
-    /** Button variant property, can be: ***primary*** | ***secondary*** | ***tertiary*** */
+    /** Button variant property, can be: primary | secondary | tertiary */
     variant: PropTypes.string,
   };
 
