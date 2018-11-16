@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import Box from './Box';
-import Button from './Button';
-import Text from './Text';
-import Flex from './Flex';
-import Row from './Row';
-import Column from './Column';
+import Box from './components/Box';
+import Button from './components/Button';
+import Text from './components/Text';
+import Flex from './components/Flex';
+import Row from './components/Row';
+import Column from './components/Column';
 
 class App extends Component {
   render() {
@@ -76,7 +76,7 @@ class App extends Component {
           <Column cols={4}>2</Column>
           <Column cols={4}>3</Column>
         </Row>
-      </div>
+    </div>
     );
   }
 }

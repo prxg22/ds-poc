@@ -2,10 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { isStyledComponent, css } from 'styled-components'
 import {
-  space,
-  display,
-  justifySelf,
-  alignSelf,
   width,
   maxWidth,
   minWidth,
@@ -16,18 +12,12 @@ export const column = css`
   ${({ cols }) => maxWidth({ maxWidth: `calc((${(cols || 12) / 12}) * 100%)` })}
   ${({ cols }) => minWidth({ minWidth: `calc((${(cols || 12) / 12}) * 100%)` })}
   ${width({ width: '100%' })};
-`
+`;
 
-column.propTypes = {
-  cols: PropTypes.number,
-}
-
-column.defaultProps = {
-  width: 1,
-}
-
-const Column = styled.div``
-
+/**
+ * @function
+ * blbla
+ */
 const asColumn = (Component) => ({ cols, ...props }) => {
   if (!isStyledComponent(Component)) return (<Component {...props} />)
 
@@ -48,4 +38,21 @@ const asColumn = (Component) => ({ cols, ...props }) => {
   return <Wrapped cols={cols} {...props} />
 }
 
+const Column = styled.div``
+
+Column.propTypes = {
+  /**
+   * number of columns occupied by div
+   */
+  cols: PropTypes.number,
+}
+
+Column.defaultProps = {
+  cols: 12,
+}
+
+/** @component */
+/**
+ * A styled `<div>` with column props.
+ */
 export default asColumn(Column)

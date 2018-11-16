@@ -33,7 +33,6 @@ Row.propTypes = {
 
 Row.defaultProps = {
   py: 10,
-  alignItems: 'center',
   flexDirection: 'row'
 }
 
